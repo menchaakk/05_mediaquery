@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    background: lightsalmon;
+    color: darkmagenta;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.mobile {
+    background-color: darkmagenta;
+    color: lightsalmon;
+}
+
+.tablet {
+    background-color: blanchedalmond;
+    color: darkolivegreen;
+    display: none;
+}
+
+.desktop {
+    background: darkgoldenrod;
+    color: lemonchiffon;
+    display: none;
+}
+
+/* Tablet-näkymän säänot*/
+
+@media only screen and (min-width: 426px)
+{
+    body {
+        background: lightsalmon;
+        color: darkmagenta;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px)
+{
+    body {
+        background: darkolivegreen;
+        color: blanchedalmond;
+    }
+
+    .tablet{
+        display:block;
+    }
+
+    .mobile{
+        display: none;
+    }
+}
+
